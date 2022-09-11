@@ -54,21 +54,3 @@ ALTER TABLE auth.users_roles
 
 ALTER TABLE auth.users_roles
     ADD CONSTRAINT fk_user_roles_roles FOREIGN KEY (role_id) REFERENCES auth.roles (id) ON DELETE CASCADE ON UPDATE RESTRICT;
-
-
-INSERT INTO auth.roles (status, role_name)
-values (true, 'ROLE_ADMIN');
-INSERT INTO auth.roles (status, role_name)
-values (true, 'ROLE_AGRONOMIST');
-INSERT INTO auth.roles (status, role_name)
-values (true, 'ROLE_ANONYMOUS');
-INSERT INTO auth.roles (status, role_name)
-values (true, 'ROLE_INVESTOR');
-INSERT INTO auth.roles (status, role_name)
-values (true, 'ROLE_SPK_REPRESENTATIVE');
-INSERT INTO auth.roles (status, role_name)
-values (true, 'ROLE_TK_REPRESENTATIVE');
-INSERT INTO auth.roles (status, role_name)
-values (true, 'ROLE_USER');
-INSERT INTO auth.roles (status, role_name)
-values (true, 'ROLE_FARMER');
